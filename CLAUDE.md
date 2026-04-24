@@ -11,7 +11,8 @@ Overrides global `~/.claude/CLAUDE.md` on conflict. Static HTML site deployed to
 - **Hours**: Monday to Friday, 8:00 AM to 6:00 PM (emergency service available)
 - **Founded**: 2024
 - **Founders**: Shane Miller, Kindle VanWormer
-- **BBB**: A+ rating
+- **Discounts**: Veteran, military, and first responder get 10% off every job
+- **BBB**: NOT accredited. Do not claim BBB rating or accreditation anywhere on the site
 
 ## Copywriting rules
 
