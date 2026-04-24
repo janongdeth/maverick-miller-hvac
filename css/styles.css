@@ -239,8 +239,8 @@ h3{font-size:clamp(1.1rem,2.2vw,1.3rem);letter-spacing:-0.01em}
 
 /* === ABOUT === */
 .about{
-  padding:0 0 80px;
-  max-width:1120px;margin:0 auto;padding-left:28px;padding-right:28px;
+  padding:80px 28px 80px;
+  max-width:1120px;margin:0 auto;
 }
 .about-layout{
   display:grid;grid-template-columns:1fr;gap:36px;
@@ -918,27 +918,34 @@ a,button,.svc-pair,.svc-cell,.review-block{-webkit-tap-highlight-color:transpare
 }
 
 /* =================================================================
-   PARALLAX BREAK SECTION
+   PARALLAX BREAK SECTION (JS-driven transform, works on mobile)
    ================================================================= */
 
 .parallax-break{
   position:relative;
-  min-height:420px;
+  min-height:460px;
+  display:flex;align-items:center;justify-content:center;
+  overflow:hidden;
+  background:#1a1917;
+}
+.parallax-bg{
+  position:absolute;
+  top:-10%;left:0;
+  width:100%;height:120%;
   background-image:url('../images/parallax-bg.webp');
   background-size:cover;
   background-position:center;
-  background-attachment:fixed;
   background-repeat:no-repeat;
-  display:flex;align-items:center;justify-content:center;
-  overflow:hidden;
+  will-change:transform;
+  z-index:0;
 }
 .parallax-break::before{
-  content:'';position:absolute;inset:0;
-  background:linear-gradient(135deg, rgba(26,25,23,0.7) 0%, rgba(26,25,23,0.55) 100%);
+  content:'';position:absolute;inset:0;z-index:1;
+  background:linear-gradient(135deg, rgba(26,25,23,0.72) 0%, rgba(26,25,23,0.58) 100%);
 }
 .parallax-inner{
   position:relative;z-index:2;
-  max-width:860px;padding:80px 28px;
+  max-width:860px;padding:90px 28px;
   text-align:center;color:#fff;
 }
 .parallax-tag{
@@ -958,15 +965,7 @@ a,button,.svc-pair,.svc-cell,.review-block{-webkit-tap-highlight-color:transpare
   letter-spacing:0.08em;text-transform:uppercase;
   color:rgba(255,255,255,0.7);
 }
-
-/* iOS + mobile fallback (fixed attachment is buggy/janky on mobile) */
-@media(max-width:900px){
-  .parallax-break{
-    background-attachment:scroll;
-    min-height:340px;
-  }
-}
-@supports(-webkit-touch-callout: none){
-  .parallax-break{background-attachment:scroll}
+@media(prefers-reduced-motion:reduce){
+  .parallax-bg{transform:none !important}
 }
 

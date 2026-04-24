@@ -29,6 +29,30 @@
     });
   });
 
+  // Parallax (scroll-driven transform, works on mobile unlike bg-attachment:fixed)
+  var parallaxBg = document.querySelector('[data-parallax-bg]');
+  var parallaxSection = document.querySelector('[data-parallax]');
+  var reducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (parallaxBg && parallaxSection && !reducedMotion) {
+    var ticking = false;
+    function updateParallax() {
+      var rect = parallaxSection.getBoundingClientRect();
+      var wh = window.innerHeight || document.documentElement.clientHeight;
+      // only animate when section is in / near viewport
+      if (rect.bottom < -200 || rect.top > wh + 200) { ticking = false; return; }
+      // speed: 0.28 = background moves ~28% the rate of foreground
+      var offset = (rect.top - wh / 2) * -0.28;
+      parallaxBg.style.transform = 'translate3d(0,' + offset.toFixed(1) + 'px,0)';
+      ticking = false;
+    }
+    function requestTick() {
+      if (!ticking) { ticking = true; window.requestAnimationFrame(updateParallax); }
+    }
+    window.addEventListener('scroll', requestTick, { passive: true });
+    window.addEventListener('resize', requestTick, { passive: true });
+    updateParallax();
+  }
+
   // Form
   var form = document.getElementById('quote-form');
   if(form){
