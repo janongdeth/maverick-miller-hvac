@@ -982,3 +982,105 @@ a,button,.svc-pair,.svc-cell,.review-block{-webkit-tap-highlight-color:transpare
   .parallax-bg{transform:none !important}
 }
 
+/* =================================================================
+   TESTIMONIAL MARQUEE (liquid-glass cards, horizontal auto-scroll)
+   ================================================================= */
+
+.testimonial-marquee{
+  padding:80px 0 96px;
+  position:relative;
+  overflow:hidden;
+  background:linear-gradient(135deg, var(--cream) 0%, var(--warm) 100%);
+}
+.testimonial-marquee::before,
+.testimonial-marquee::after{
+  content:'';position:absolute;
+  pointer-events:none;
+  border-radius:50%;
+  filter:blur(60px);
+  z-index:0;
+}
+.testimonial-marquee::before{
+  top:30%;left:10%;
+  width:360px;height:360px;
+  background:radial-gradient(circle, rgba(192,57,43,0.22), transparent 70%);
+}
+.testimonial-marquee::after{
+  top:10%;right:8%;
+  width:380px;height:380px;
+  background:radial-gradient(circle, rgba(13,82,160,0.18), transparent 70%);
+}
+
+.testimonial-marquee > h2{
+  max-width:1120px;margin:0 auto 36px;padding:0 28px;
+  position:relative;z-index:2;
+}
+
+.marquee{
+  position:relative;z-index:2;
+  overflow:hidden;
+  padding:12px 0;
+  mask-image:linear-gradient(90deg, transparent, #000 10%, #000 90%, transparent);
+  -webkit-mask-image:linear-gradient(90deg, transparent, #000 10%, #000 90%, transparent);
+}
+.marquee-track{
+  display:flex;gap:20px;
+  width:max-content;
+  animation:marquee 55s linear infinite;
+}
+.marquee:hover .marquee-track,
+.marquee:focus-within .marquee-track{
+  animation-play-state:paused;
+}
+@keyframes marquee{
+  from{transform:translateX(0)}
+  to{transform:translateX(-50%)}
+}
+@media(prefers-reduced-motion:reduce){
+  .marquee-track{animation:none;transform:none}
+}
+
+.liquid-card{
+  flex-shrink:0;
+  width:320px;
+  padding:24px 26px;
+  border-radius:20px;
+  background:rgba(255,255,255,0.55);
+  backdrop-filter:blur(14px) saturate(1.4);
+  -webkit-backdrop-filter:blur(14px) saturate(1.4);
+  border:1px solid rgba(255,255,255,0.8);
+  box-shadow:0 8px 24px rgba(26,25,23,0.06), inset 0 1px 0 rgba(255,255,255,0.7);
+  display:flex;flex-direction:column;gap:14px;
+}
+.liquid-card-head{display:flex;align-items:center;gap:12px}
+.liquid-avatar{
+  width:42px;height:42px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--sans);font-weight:700;font-size:0.88rem;
+  color:#fff;letter-spacing:0.02em;flex-shrink:0;
+}
+.liquid-avatar.av-red{background:var(--red)}
+.liquid-avatar.av-navy{background:#0d52a0}
+.liquid-avatar.av-amber{background:#b8860b}
+.liquid-avatar.av-ink{background:var(--ink)}
+.liquid-card-head h4{
+  font-family:var(--sans);font-size:0.96rem;font-weight:700;
+  color:var(--ink);line-height:1.15;margin:0;
+}
+.liquid-card-head p{
+  font-family:var(--sans);font-size:0.8rem;color:var(--text-light);
+  margin:2px 0 0;line-height:1;
+}
+.liquid-card-content{
+  font-family:var(--serif);font-style:italic;
+  font-size:0.94rem;line-height:1.6;color:var(--text);
+  margin:0;
+}
+.liquid-stars{display:flex;gap:2px;color:#f7c600}
+.liquid-stars svg{width:15px;height:15px}
+
+@media(max-width:700px){
+  .liquid-card{width:280px;padding:20px 22px}
+  .marquee-track{animation-duration:45s}
+}
+
