@@ -29,7 +29,8 @@
     });
   });
 
-  // Parallax (scroll-driven transform, works on mobile unlike bg-attachment:fixed)
+  // Parallax: pin the bg to viewport (emulates background-attachment:fixed,
+  // but works on iOS/Android where fixed-attachment is broken/janky)
   var parallaxBg = document.querySelector('[data-parallax-bg]');
   var parallaxSection = document.querySelector('[data-parallax]');
   var reducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -38,10 +39,9 @@
     function updateParallax() {
       var rect = parallaxSection.getBoundingClientRect();
       var wh = window.innerHeight || document.documentElement.clientHeight;
-      // only animate when section is in / near viewport
-      if (rect.bottom < -200 || rect.top > wh + 200) { ticking = false; return; }
-      // speed: 0.28 = background moves ~28% the rate of foreground
-      var offset = (rect.top - wh / 2) * -0.28;
+      if (rect.bottom < -50 || rect.top > wh + 50) { ticking = false; return; }
+      // offset = -rect.top → bg stays at viewport top as section scrolls
+      var offset = -rect.top;
       parallaxBg.style.transform = 'translate3d(0,' + offset.toFixed(1) + 'px,0)';
       ticking = false;
     }
