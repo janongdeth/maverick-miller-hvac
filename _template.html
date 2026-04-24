@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{TITLE}}</title>
+  <meta name="description" content="{{META_DESC}}">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://maverickandmillerhvac.com/{{SLUG}}">
+  <meta property="og:title" content="{{OG_TITLE}}">
+  <meta property="og:description" content="{{OG_DESC}}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://maverickandmillerhvac.com/{{SLUG}}">
+  <meta property="og:image" content="https://maverickandmillerhvac.com/images/{{HERO_IMG}}">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="images/logo.webp" type="image/webp">
+
+  {{SCHEMA}}
+</head>
+<body>
+  <a href="#main" class="sr-only-focus">Skip to content</a>
+
+  <!-- NAV-START -->
+  <header class="nav" id="nav">
+    <div class="nav-bar">
+      <a href="/" class="nav-logo">
+        <img src="images/logo.webp" alt="Maverick & Miller HVAC" width="40" height="40">
+        <div class="nav-logo-text">Maverick & Miller<span class="nav-logo-sub">Heating & Cooling</span></div>
+      </a>
+      <div class="nav-links">
+        <a href="/about">About</a>
+        <a href="/services">Services</a>
+        <a href="/service-area">Service Area</a>
+        <a href="/reviews">Reviews</a>
+        <a href="/contact">Contact</a>
+      </div>
+      <a href="tel:+14197776061" class="nav-call">(419) 777-6061</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-mobile" id="nav-mobile">
+      <a href="/about">About</a>
+      <a href="/services">Services</a>
+      <a href="/service-area">Service Area</a>
+      <a href="/reviews">Reviews</a>
+      <a href="/contact">Contact</a>
+      <a href="tel:+14197776061" class="nav-mobile-cta">Call (419) 777-6061</a>
+    </div>
+  </header>
+  <!-- NAV-END -->
+
+  <main id="main">
+    {{BREADCRUMB}}
+    {{BODY}}
+    <section class="cta-band">
+      <h2>{{CTA_H2}}</h2>
+      <p>{{CTA_P}}</p>
+      <div class="cta-btns">
+        <a href="tel:+14197776061" class="btn-w">Call (419) 777-6061</a>
+        <a href="/contact" class="btn-w-o">Get a quote</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER-START -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="images/logo.webp" alt="" width="40" height="40" class="footer-logo">
+        <p>Maverick & Miller HVAC. Family-owned, Toledo-based, fairly priced.</p>
+        <p style="margin-top:8px;font-size:0.82rem">7628 Trotter Rd<br>Toledo, OH 43617</p>
+        <p style="margin-top:4px;font-size:0.82rem"><a href="tel:+14197776061" style="color:rgba(255,255,255,0.7)">(419) 777-6061</a></p>
+      </div>
+      <div class="footer-cols footer-cols-4">
+        <div>
+          <h4>Services</h4>
+          <a href="/ac-repair">AC Repair</a>
+          <a href="/furnace-repair">Furnace Repair</a>
+          <a href="/water-heater-installation">Water Heaters</a>
+          <a href="/ductless-mini-splits">Mini-Splits</a>
+          <a href="/air-filtration">Air Filtration</a>
+          <a href="/hvac-maintenance">Maintenance</a>
+          <a href="/commercial-hvac">Commercial HVAC</a>
+        </div>
+        <div>
+          <h4>Service Area</h4>
+          <a href="/hvac-perrysburg-oh">Perrysburg</a>
+          <a href="/hvac-sylvania-oh">Sylvania</a>
+          <a href="/hvac-whitehouse-oh">Whitehouse</a>
+          <a href="/hvac-waterville-oh">Waterville</a>
+          <a href="/hvac-bowling-green-oh">Bowling Green</a>
+          <a href="/service-area">All areas &rarr;</a>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <a href="/about">About</a>
+          <a href="/services">Services</a>
+          <a href="/reviews">Reviews</a>
+          <a href="/contact">Contact</a>
+        </div>
+        <div>
+          <h4>Hours</h4>
+          <span>Mon &ndash; Fri</span>
+          <span>8:00 AM &ndash; 6:00 PM</span>
+          <span style="margin-top:10px;display:block">Emergency service available</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Maverick & Miller HVAC &bull; Licensed & Insured &bull; Toledo, Ohio</p>
+    </div>
+  </footer>
+  <!-- FOOTER-END -->
+
+  <div class="sticky-call" id="sticky-call">
+    <a href="tel:+14197776061">Call (419) 777-6061</a>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
