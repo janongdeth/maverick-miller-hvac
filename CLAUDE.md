@@ -7,7 +7,7 @@ Overrides global `~/.claude/CLAUDE.md` on conflict. Static HTML site deployed to
 - **Legal name**: Maverick & Miller HVAC (alternateName: Maverick HVAC LLC)
 - **Never abbreviate to "M&M"** — M&M Heating & Cooling is a separate, established 45-year Toledo company. Brand collision risk. Always use the full name.
 - **Phone**: (419) 777-6061
-- **Address**: 7628 Trotter Road, Toledo, OH 43617
+- **Address**: 7628 Trotter Road, Oregon, OH 43616 (CONFIRM with client - street may need updating)
 - **Hours**: Monday to Friday, 8:00 AM to 6:00 PM (emergency service available)
 - **Founded**: 2024
 - **Founders**: Shane Miller, Kindle VanWormer
@@ -32,10 +32,10 @@ Overrides global `~/.claude/CLAUDE.md` on conflict. Static HTML site deployed to
 
 ## Site structure
 
-- 18 pages total, flat URLs, `cleanUrls: true` in vercel.json
+- 20 pages total, flat URLs, `cleanUrls: true` in vercel.json
 - 6 core: `/`, `/about`, `/services`, `/service-area`, `/reviews`, `/contact`
 - 7 service: `/ac-repair`, `/furnace-repair`, `/water-heater-installation`, `/ductless-mini-splits`, `/air-filtration`, `/hvac-maintenance`, `/commercial-hvac`
-- 5 city: `/hvac-perrysburg-oh`, `/hvac-sylvania-oh`, `/hvac-whitehouse-oh`, `/hvac-waterville-oh`, `/hvac-bowling-green-oh`
+- 7 city: `/hvac-toledo-oh`, `/hvac-oregon-oh`, `/hvac-perrysburg-oh`, `/hvac-sylvania-oh`, `/hvac-whitehouse-oh`, `/hvac-waterville-oh`, `/hvac-bowling-green-oh`
 - Shared header between `<!-- NAV-START -->` and `<!-- NAV-END -->`, shared footer between `<!-- FOOTER-START -->` and `<!-- FOOTER-END -->`. Use `sed` with multiple `-e` flags for bulk edits across all 18 pages.
 
 ## Generator tooling

@@ -7,8 +7,8 @@ SERVICE_PAGES = [
     # =========================================================
     {
         "slug": "furnace-repair",
-        "title": "Furnace Repair & Installation Toledo OH | Maverick & Miller HVAC",
-        "meta_desc": "Same-day furnace repair in Toledo OH. Gas and electric furnace service, 90%+ AFUE installs, honest repair-vs-replace advice. Call (419) 777-6061.",
+        "title": "Furnace Repair & Installation Oregon OH | Maverick & Miller HVAC",
+        "meta_desc": "Same-day furnace repair in Oregon OH. Gas and electric furnace service, 90%+ AFUE installs, honest repair-vs-replace advice. Call (419) 777-6061.",
         "og_title": "Furnace Repair & Installation Toledo OH",
         "og_desc": "Fast furnace repair and fairly-priced new installs in Toledo and Northwest Ohio.",
         "hero_img": "photo-2.webp",
@@ -17,7 +17,7 @@ SERVICE_PAGES = [
         "svc_desc": "Gas and electric furnace repair, diagnostics, and new high-efficiency installations in Toledo and Northwest Ohio.",
         "short": "Furnace repair",
         "tag": "Heating",
-        "h1": "Furnace Repair & Installation in Toledo, OH",
+        "h1": "Furnace Repair & Installation in Oregon, OH",
         "hero_p": "Heat that works when Toledo winter hits. Same-day diagnostics during heating season, fair prices on Trane and Air Quest gas furnace installs.",
         "aside_line": "Call first thing if the heat's out. We save emergency slots for no-heat calls when it's below 20.",
         "related": [("ac-repair", "AC Repair"), ("hvac-maintenance", "Furnace Tune-Ups"), ("water-heater-installation", "Water Heaters"), ("air-filtration", "Air Filtration")],
@@ -79,7 +79,7 @@ SERVICE_PAGES = [
     # =========================================================
     {
         "slug": "water-heater-installation",
-        "title": "Water Heater Installation Toledo OH | Maverick & Miller",
+        "title": "Water Heater Installation Oregon OH | Maverick & Miller",
         "meta_desc": "Water heater installation in Toledo OH. Tank and tankless gas and electric. Permit pulled, same-day install often available. Call (419) 777-6061.",
         "og_title": "Water Heater Installation Toledo OH",
         "og_desc": "Tank and tankless water heater install and replacement in Toledo and Northwest Ohio.",
@@ -89,7 +89,7 @@ SERVICE_PAGES = [
         "svc_desc": "Residential water heater installation and replacement, tank and tankless, gas and electric, across Toledo and Northwest Ohio. Permit pulled.",
         "short": "Water heater service",
         "tag": "Hot Water",
-        "h1": "Water Heater Installation in Toledo, OH",
+        "h1": "Water Heater Installation in Oregon, OH",
         "hero_p": "Hot water installed right, permit pulled. Tank or tankless, gas or electric. Full replacement typically same-day once the unit is on site.",
         "aside_line": "Leaking water heater? Turn the water off at the shut-off valve. Then call us.",
         "related": [("furnace-repair", "Furnace Repair"), ("ac-repair", "AC Repair"), ("hvac-maintenance", "Maintenance"), ("ductless-mini-splits", "Mini-Splits")],
@@ -146,8 +146,8 @@ SERVICE_PAGES = [
     # =========================================================
     {
         "slug": "ductless-mini-splits",
-        "title": "Ductless Mini-Split Installation Toledo OH | Maverick & Miller HVAC",
-        "meta_desc": "Ductless mini-split installation in Toledo OH. Mitsubishi and Trane single-zone and multi-zone systems. Great for additions and historic homes. Call (419) 777-6061.",
+        "title": "Ductless Mini-Split Installation Oregon OH | Maverick & Miller HVAC",
+        "meta_desc": "Ductless mini-split installation in Oregon OH. Mitsubishi and Trane single-zone and multi-zone systems. Great for additions and historic homes. Call (419) 777-6061.",
         "og_title": "Ductless Mini-Split Installation Toledo OH",
         "og_desc": "Zoned comfort without ductwork. Mitsubishi and Trane mini-split installs in Toledo.",
         "hero_img": "photo-3.webp",
@@ -156,7 +156,7 @@ SERVICE_PAGES = [
         "svc_desc": "Single-zone and multi-zone ductless mini-split installation in Toledo and Northwest Ohio. Mitsubishi and Trane dealer.",
         "short": "Mini-split install",
         "tag": "Zoned Comfort",
-        "h1": "Ductless Mini-Split Installation in Toledo, OH",
+        "h1": "Ductless Mini-Split Installation in Oregon, OH",
         "hero_p": "Zoned comfort without the ductwork. Mini-splits heat and cool specific rooms, ideal for additions, converted attics, historic homes, and any space that runs hot or cold.",
         "aside_line": "Most mini-split installs take a half-day to a full day per zone. We quote after a site visit.",
         "related": [("ac-repair", "AC Repair"), ("furnace-repair", "Furnace Repair"), ("air-filtration", "Air Filtration"), ("hvac-maintenance", "Maintenance")],
@@ -214,8 +214,8 @@ SERVICE_PAGES = [
     # =========================================================
     {
         "slug": "air-filtration",
-        "title": "Air Filtration & Purification Toledo OH | Maverick & Miller HVAC",
-        "meta_desc": "Whole-home air filtration in Toledo OH. MERV 13, media cleaners, UV purifiers, HEPA. For allergies, dust, pet dander. Call (419) 777-6061.",
+        "title": "Air Filtration & Purification Oregon OH | Maverick & Miller HVAC",
+        "meta_desc": "Whole-home air filtration in Oregon OH. MERV 13, media cleaners, UV purifiers, HEPA. For allergies, dust, pet dander. Call (419) 777-6061.",
         "og_title": "Air Filtration & Purification Toledo OH",
         "og_desc": "Indoor air quality solutions for Toledo homes. Filtration, purification, humidification.",
         "hero_img": "hero-bg.webp",
@@ -224,7 +224,7 @@ SERVICE_PAGES = [
         "svc_desc": "Whole-home air filtration, media air cleaners, UV purifiers, and HEPA systems for Toledo-area homes. Indoor air quality assessment included.",
         "short": "Air quality",
         "tag": "Indoor Air Quality",
-        "h1": "Whole-Home Air Filtration in Toledo, OH",
+        "h1": "Whole-Home Air Filtration in Oregon, OH",
         "hero_p": "Cleaner air without the marketing gimmicks. Media air cleaners, UV purifiers, and HEPA systems. We tell you what actually helps and what's a waste of money.",
         "aside_line": "Start with a MERV 13 filter upgrade. It's the cheapest change with the biggest impact on most homes.",
         "related": [("ac-repair", "AC Repair"), ("furnace-repair", "Furnace Repair"), ("hvac-maintenance", "Maintenance"), ("ductless-mini-splits", "Mini-Splits")],
@@ -288,8 +288,8 @@ SERVICE_PAGES = [
     # =========================================================
     {
         "slug": "hvac-maintenance",
-        "title": "HVAC Maintenance & Tune-Ups Toledo OH | Maverick & Miller HVAC",
-        "meta_desc": "HVAC tune-ups in Toledo OH. Spring AC and fall furnace tune-ups plus service plans. Catches problems early. Call (419) 777-6061.",
+        "title": "HVAC Maintenance & Tune-Ups Oregon OH | Maverick & Miller HVAC",
+        "meta_desc": "HVAC tune-ups in Oregon OH. Spring AC and fall furnace tune-ups plus service plans. Catches problems early. Call (419) 777-6061.",
         "og_title": "HVAC Tune-Ups & Maintenance Toledo OH",
         "og_desc": "Seasonal HVAC maintenance and service plans for Toledo homes.",
         "hero_img": "hero-bg.webp",
@@ -298,7 +298,7 @@ SERVICE_PAGES = [
         "svc_desc": "Seasonal HVAC tune-ups and maintenance service plans for Toledo-area homes. AC in spring, furnace in fall.",
         "short": "HVAC maintenance",
         "tag": "Maintenance & Tune-Ups",
-        "h1": "HVAC Maintenance & Tune-Ups in Toledo, OH",
+        "h1": "HVAC Maintenance & Tune-Ups in Oregon, OH",
         "hero_p": "Catches the $200 problem before it becomes the $6,000 one. Spring AC tune-ups, fall furnace tune-ups, and service plans that keep systems running and bills down.",
         "aside_line": "Haven't had a tune-up in a few years? Start now, before the next heat wave or cold snap.",
         "related": [("ac-repair", "AC Repair"), ("furnace-repair", "Furnace Repair"), ("air-filtration", "Air Filtration"), ("water-heater-installation", "Water Heaters")],
@@ -372,8 +372,8 @@ SERVICE_PAGES = [
     # =========================================================
     {
         "slug": "commercial-hvac",
-        "title": "Commercial HVAC Toledo OH | Maverick & Miller HVAC",
-        "meta_desc": "Commercial HVAC in Toledo OH. Rooftop units, light commercial installs, preventive maintenance contracts for offices, restaurants, retail. Call (419) 777-6061.",
+        "title": "Commercial HVAC Oregon OH | Maverick & Miller HVAC",
+        "meta_desc": "Commercial HVAC in Oregon OH. Rooftop units, light commercial installs, preventive maintenance contracts for offices, restaurants, retail. Call (419) 777-6061.",
         "og_title": "Commercial HVAC Toledo OH",
         "og_desc": "Commercial HVAC service and install for Toledo-area offices, restaurants, retail, and small warehouses.",
         "hero_img": "hero-bg.webp",
@@ -382,7 +382,7 @@ SERVICE_PAGES = [
         "svc_desc": "Commercial HVAC service, rooftop unit repair and replacement, preventive maintenance contracts for Toledo-area businesses.",
         "short": "Commercial HVAC",
         "tag": "Commercial HVAC",
-        "h1": "Commercial HVAC Services in Toledo, OH",
+        "h1": "Commercial HVAC Services in Oregon, OH",
         "hero_p": "For Toledo businesses: rooftop units, light commercial installs, preventive maintenance contracts. Offices, restaurants, retail, small warehouses, and rental properties across Northwest Ohio.",
         "aside_line": "Commercial emergency? Call (419) 777-6061. We prioritize business continuity calls.",
         "related": [("ac-repair", "AC Repair"), ("furnace-repair", "Furnace Repair"), ("hvac-maintenance", "Maintenance"), ("air-filtration", "Air Filtration")],
