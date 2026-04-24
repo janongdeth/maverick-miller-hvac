@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /planning/
+Disallow: /_template.html
+Disallow: /_gen.py
+Disallow: /_content.py
+
+Sitemap: https://maverickandmillerhvac.com/sitemap.xml
