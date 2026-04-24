@@ -542,7 +542,8 @@ a,button,.svc-pair,.svc-cell,.review-block{-webkit-tap-highlight-color:transpare
 .side-card li{padding:8px 0;border-bottom:1px solid var(--warm);font-size:0.92rem}
 .side-card li:last-child{border-bottom:none}
 .side-card a{color:var(--red);font-family:var(--sans);font-weight:600;font-size:0.92rem}
-.side-card .btn-r{width:100%;text-align:center;margin-top:8px}
+.side-card .btn-r{width:100%;text-align:center;margin-top:8px;color:#fff}
+.side-card .btn-r:hover{color:#fff}
 
 /* === PROCESS STEPS === */
 .steps{
@@ -752,4 +753,124 @@ a,button,.svc-pair,.svc-cell,.review-block{-webkit-tap-highlight-color:transpare
 /* === 404-style for missing pages (future) === */
 .page-section{padding:48px 0}
 .page-section-center{text-align:center}
+
+/* =================================================================
+   HOME SERVICES GRID (all 7 services, full-bleed images, no numbers)
+   ================================================================= */
+
+.home-services{
+  padding:80px 28px 96px;
+  max-width:1280px;margin:0 auto;
+}
+.home-services-head{
+  display:flex;justify-content:space-between;align-items:end;gap:24px;
+  margin-bottom:40px;flex-wrap:wrap;
+}
+.home-services-head h2{margin:0}
+.home-services-head p{
+  max-width:420px;color:var(--text-light);font-size:0.96rem;line-height:1.7;margin:0;
+}
+.home-services-grid{
+  display:grid;grid-template-columns:1fr;gap:28px;
+}
+@media(min-width:640px){.home-services-grid{grid-template-columns:1fr 1fr}}
+@media(min-width:1000px){.home-services-grid{grid-template-columns:1fr 1fr 1fr}}
+
+.hsvc{
+  display:flex;flex-direction:column;gap:16px;
+  text-decoration:none;color:inherit;
+  transition:transform 0.2s;
+}
+.hsvc:hover{transform:translateY(-3px)}
+.hsvc-img{
+  aspect-ratio:4/3;overflow:hidden;background:var(--warm);
+}
+.hsvc-img img{
+  width:100%;height:100%;object-fit:cover;display:block;
+  transition:transform 0.4s ease;
+}
+.hsvc:hover .hsvc-img img{transform:scale(1.03)}
+.hsvc-body{padding:0 4px}
+.hsvc-body h3{
+  font-family:var(--sans);font-size:1.2rem;color:var(--ink);
+  margin-bottom:6px;
+}
+.hsvc-body p{
+  font-size:0.94rem;line-height:1.65;color:var(--text);margin-bottom:10px;
+}
+.hsvc-link{
+  font-family:var(--sans);font-weight:600;font-size:0.85rem;color:var(--red);
+}
+.hsvc:hover .hsvc-link{text-decoration:underline}
+
+/* First card featured (spans 2 cols on large screens) */
+@media(min-width:1000px){
+  .hsvc.hsvc-feature{grid-column:span 2}
+  .hsvc.hsvc-feature .hsvc-img{aspect-ratio:16/9}
+  .hsvc.hsvc-feature h3{font-size:1.5rem}
+  .hsvc.hsvc-feature p{font-size:1rem}
+}
+
+/* =================================================================
+   TRUST BAR — richer colors + BBB badge
+   ================================================================= */
+
+.trust-bar{
+  background:linear-gradient(180deg, var(--cream) 0%, var(--warm) 100%);
+  border-top:1px solid var(--sand);border-bottom:1px solid var(--sand);
+  padding:40px 0;
+}
+.trust-bar-inner{
+  max-width:1120px;margin:0 auto;padding:0 28px;
+  display:grid;grid-template-columns:repeat(2,1fr);gap:20px;
+  align-items:center;
+}
+@media(min-width:760px){.trust-bar-inner{grid-template-columns:repeat(4,1fr);gap:28px}}
+
+.trust-item{
+  display:flex;align-items:center;gap:14px;
+  padding:14px 16px;background:var(--white);
+  border-radius:4px;border:1px solid var(--sand);
+  box-shadow:0 1px 0 rgba(0,0,0,0.02);
+}
+.trust-item-icon{
+  flex-shrink:0;width:44px;height:44px;
+  display:flex;align-items:center;justify-content:center;
+  border-radius:4px;
+}
+.trust-item-icon.ti-red{background:#fdecea;color:var(--red)}
+.trust-item-icon.ti-navy{background:#e7eef7;color:#0d52a0}
+.trust-item-icon.ti-green{background:#e9f4ec;color:#2d6a4f}
+.trust-item-icon.ti-amber{background:#fbf1e2;color:#b8860b}
+.trust-item-icon svg{width:22px;height:22px;stroke-width:2;fill:none;stroke:currentColor}
+.trust-item-text strong{
+  display:block;font-family:var(--sans);font-size:0.94rem;font-weight:700;
+  color:var(--ink);line-height:1.15;
+}
+.trust-item-text span{
+  display:block;font-family:var(--sans);font-size:0.76rem;
+  color:var(--text-light);margin-top:3px;line-height:1.3;
+}
+
+/* BBB badge (SVG-based, placeholder until real BBB dynamic seal) */
+.bbb-badge{
+  flex-shrink:0;width:56px;height:44px;
+  background:#0d52a0;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  color:#fff;border-radius:3px;position:relative;
+  box-shadow:0 1px 3px rgba(13,82,160,0.3);
+}
+.bbb-badge-top{
+  font-family:var(--sans);font-size:0.58rem;font-weight:700;
+  letter-spacing:0.08em;line-height:1;margin-bottom:2px;
+}
+.bbb-badge-rating{
+  font-family:var(--sans);font-size:1.05rem;font-weight:800;
+  line-height:1;letter-spacing:-0.02em;
+}
+.bbb-badge-bottom{
+  font-family:var(--sans);font-size:0.42rem;font-weight:700;
+  letter-spacing:0.08em;line-height:1;margin-top:2px;
+  text-transform:uppercase;
+}
 

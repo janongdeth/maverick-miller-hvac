@@ -107,9 +107,9 @@
         <div class="nav-logo-text">Maverick & Miller<span class="nav-logo-sub">Heating & Cooling</span></div>
       </a>
       <div class="nav-links">
-        <a href="/about">About</a>
         <a href="/services">Services</a>
         <a href="/service-area">Service Area</a>
+        <a href="/about">About</a>
         <a href="/reviews">Reviews</a>
         <a href="/contact">Contact</a>
       </div>
@@ -119,9 +119,9 @@
       </button>
     </div>
     <div class="nav-mobile" id="nav-mobile">
-      <a href="/about">About</a>
       <a href="/services">Services</a>
       <a href="/service-area">Service Area</a>
+      <a href="/about">About</a>
       <a href="/reviews">Reviews</a>
       <a href="/contact">Contact</a>
       <a href="tel:+14197776061" class="nav-mobile-cta">Call (419) 777-6061</a>
@@ -164,57 +164,116 @@
     <section class="trust-bar">
       <div class="trust-bar-inner">
         <div class="trust-item">
-          <strong>Family-owned</strong>
-          <span>Shane & Kindle, founded 2024</span>
+          <div class="trust-item-icon ti-red">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <div class="trust-item-text">
+            <strong>Family-owned</strong>
+            <span>Shane & Kindle, founded 2024</span>
+          </div>
         </div>
         <div class="trust-item">
-          <strong>Licensed & Insured</strong>
-          <span>Ohio HVAC contractor</span>
+          <div class="trust-item-icon ti-navy">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div class="trust-item-text">
+            <strong>Licensed & Insured</strong>
+            <span>Ohio HVAC contractor</span>
+          </div>
         </div>
         <div class="trust-item">
-          <strong>A+ BBB Rating</strong>
-          <span>In our first year</span>
+          <div class="bbb-badge" aria-label="A+ BBB rating">
+            <div class="bbb-badge-top">BBB</div>
+            <div class="bbb-badge-rating">A+</div>
+            <div class="bbb-badge-bottom">Rated</div>
+          </div>
+          <div class="trust-item-text">
+            <strong>A+ BBB Rating</strong>
+            <span>In our first year</span>
+          </div>
         </div>
         <div class="trust-item">
-          <strong>Fair, fixed pricing</strong>
-          <span>No surprise add-ons</span>
+          <div class="trust-item-icon ti-amber">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <div class="trust-item-text">
+            <strong>Fair, fixed pricing</strong>
+            <span>No surprise add-ons</span>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- SERVICES -->
-    <section class="services" id="services">
-      <h2>What we do</h2>
-
-      <div class="svc-pair">
-        <div class="svc-img">
-          <img src="images/photo-1.webp" alt="Trane central air conditioner" loading="lazy">
-        </div>
-        <div class="svc-body">
-          <div class="svc-num">01 &mdash; Cooling</div>
-          <h3>Air Conditioning</h3>
-          <p>Central air acting up? We find the problem fast. Need a new system? We install Trane units built for Ohio summers, priced without the big-company markup.</p>
-          <a href="/ac-repair" class="link">AC repair & installation &rarr;</a>
-        </div>
+    <section class="home-services" id="services">
+      <div class="home-services-head">
+        <h2>What we do</h2>
+        <p>Full HVAC service for Toledo and Northwest Ohio. Click any service for pricing, process, and the questions we hear most.</p>
       </div>
 
-      <div class="svc-pair svc-pair-flip">
-        <div class="svc-img">
-          <img src="images/photo-2.webp" alt="Trane gas furnace" loading="lazy">
-        </div>
-        <div class="svc-body">
-          <div class="svc-num">02 &mdash; Heating</div>
-          <h3>Furnaces</h3>
-          <p>Dead furnace in January is nobody's idea of fun. We do same-day repair when we can, and when it's replacement time, we walk you through options honestly.</p>
-          <a href="/furnace-repair" class="link">Furnace repair & installation &rarr;</a>
-        </div>
-      </div>
+      <div class="home-services-grid">
+        <a href="/ac-repair" class="hsvc hsvc-feature">
+          <div class="hsvc-img"><img src="images/photo-1.webp" alt="Central air conditioner installation" loading="lazy"></div>
+          <div class="hsvc-body">
+            <h3>AC Repair & Installation</h3>
+            <p>Same-day diagnostics on most calls during cooling season. Trane and Air Quest installs at fair prices when it's time to replace.</p>
+            <span class="hsvc-link">See AC details &rarr;</span>
+          </div>
+        </a>
 
-      <div class="svc-rest" style="grid-template-columns:1fr">
-        <div class="svc-cell" style="border-right:none">
-          <h3 style="margin-bottom:12px">And more</h3>
-          <p>Water heaters, mini-splits, air filtration, tune-ups, commercial systems. <a href="/services" class="link">See all services &rarr;</a></p>
-        </div>
+        <a href="/furnace-repair" class="hsvc">
+          <div class="hsvc-img"><img src="images/photo-2.webp" alt="Gas furnace" loading="lazy"></div>
+          <div class="hsvc-body">
+            <h3>Furnace Repair & Installation</h3>
+            <p>Same-day repair during heating season. High-efficiency installs and honest repair-versus-replace advice.</p>
+            <span class="hsvc-link">See furnace details &rarr;</span>
+          </div>
+        </a>
+
+        <a href="/water-heater-installation" class="hsvc">
+          <div class="hsvc-img"><img src="images/photo-4.webp" alt="Water heater installation" loading="lazy"></div>
+          <div class="hsvc-body">
+            <h3>Water Heater Installation</h3>
+            <p>Tank and tankless. Permit pulled, inspection handled. Typical tank swap done same-day.</p>
+            <span class="hsvc-link">See water heater details &rarr;</span>
+          </div>
+        </a>
+
+        <a href="/ductless-mini-splits" class="hsvc">
+          <div class="hsvc-img"><img src="images/photo-3.webp" alt="Ductless mini-split system" loading="lazy"></div>
+          <div class="hsvc-body">
+            <h3>Ductless Mini-Splits</h3>
+            <p>Zoned comfort without ductwork. Ideal for additions, historic homes, and rooms that run hot or cold.</p>
+            <span class="hsvc-link">See mini-split details &rarr;</span>
+          </div>
+        </a>
+
+        <a href="/air-filtration" class="hsvc">
+          <div class="hsvc-img"><img src="images/air-filtration.webp" alt="Whole-home air filtration system" loading="lazy"></div>
+          <div class="hsvc-body">
+            <h3>Air Filtration</h3>
+            <p>MERV 13, media cleaners, UV purifiers, HEPA systems. For allergies, dust, pet dander, and smoke.</p>
+            <span class="hsvc-link">See air quality details &rarr;</span>
+          </div>
+        </a>
+
+        <a href="/hvac-maintenance" class="hsvc">
+          <div class="hsvc-img"><img src="images/maintenance.webp" alt="HVAC technician performing maintenance" loading="lazy"></div>
+          <div class="hsvc-body">
+            <h3>HVAC Maintenance</h3>
+            <p>Spring AC and fall furnace tune-ups. Catches the $200 problems before they become January emergencies.</p>
+            <span class="hsvc-link">See maintenance details &rarr;</span>
+          </div>
+        </a>
+
+        <a href="/commercial-hvac" class="hsvc">
+          <div class="hsvc-img"><img src="images/commercial-hvac.webp" alt="Commercial HVAC rooftop unit" loading="lazy"></div>
+          <div class="hsvc-body">
+            <h3>Commercial HVAC</h3>
+            <p>Rooftop units, light commercial installs, preventive maintenance contracts. Offices, restaurants, retail.</p>
+            <span class="hsvc-link">See commercial details &rarr;</span>
+          </div>
+        </a>
       </div>
     </section>
 
